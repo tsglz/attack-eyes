@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* 将内容推到右边 */
+  font-size: calc(10px + 1vmin);
+  color: rgba(255, 255, 255, 0.696);
+  gap: 1rem; /* 保持导航项之间的间距 */
+}
+
+.content-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-content {
+  margin-bottom: 20px;
+}
+
+#mindmap {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.diagram-title {
+  font-size: 2em; /* 调整字体大小 */
+  font-weight: bold; /* 加粗字体 */
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

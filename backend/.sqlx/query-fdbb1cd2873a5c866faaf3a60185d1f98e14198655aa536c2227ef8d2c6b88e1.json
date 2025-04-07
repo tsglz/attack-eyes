@@ -1,0 +1,24 @@
+{
+  "db_name": "MySQL",
+  "query": "SELECT username FROM users WHERE username = ?",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "username",
+        "type_info": {
+          "type": "VarString",
+          "flags": "NOT_NULL | UNIQUE_KEY | NO_DEFAULT_VALUE",
+          "max_size": 1020
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "fdbb1cd2873a5c866faaf3a60185d1f98e14198655aa536c2227ef8d2c6b88e1"
+}
